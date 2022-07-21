@@ -243,16 +243,66 @@ button a {
     font-size: 35px;
     color: cyan;
     padding: 0 10px;
+    transition: 0.3s;
+}
+
+.foot-icon a:hover {
+    font-size: 35px;
+    color: rgb(255, 221, 0);
+    padding: 0 10px;
 }
 
 /* footer end */
 
-/* banner media query for mobile device */
+/* upcoming page match schedule */
+.card-flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card-flag span {
+    margin: 5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.flag-text {
+    padding-bottom: 40px;
+}
+
+.flag-text h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #161616;
+}
+
+.flag-text h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #4D4D4D;
+}
+
+/* upcoming page match schedule */
+
+/* media query for mobile device */
 @media only screen and (max-width:688px) {
+
+    /* banner section start */
     .banner-container {
         background-color: black;
         width: 95%;
         height: 100%;
+        margin: 50px auto 0;
     }
 
     .banner {
@@ -263,7 +313,7 @@ button a {
     .banner-text {
         width: 100%;
         text-align: center;
-        padding: 50px;
+        padding: 25px;
     }
 
     .banner-text h1 {
@@ -278,8 +328,82 @@ button a {
         width: 100%;
     }
 
+    /* banner section end */
+
+    /* blog section start  */
+    .blogs-container {
+        width: 95%;
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px auto;
+
+    }
+
+    .btn-group {
+        width: 100%;
+    }
+
+    .all-btn {
+        margin: 0;
+        background-color: white;
+    }
+
+    .all-btn a {
+        padding: 10px 10px;
+        border: 1px solid gainsboro;
+    }
+
+    .blogs {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .blog-card {
+        margin: 0;
+    }
+
+    .card-image img {
+        width: 100%;
+    }
+
+    /* blog section end */
+    /* footer section start  */
+    .foot-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .foot-title h2 {
+        padding-bottom: 10px;
+    }
+
+    .foot-menu a {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .foot-icon a {
+        font-size: 25px;
+        color: rgb(255, 225, 0);
+        padding: 30px 10px;
+        display: inline-block;
+    }
+
+    /* footer section end  */
+
 
 }
 
-/* banner media query for tablet device */
-@media only screen and (min-width:689px) and (max-width:992px) {}
+/* media query for tablet device */
+@media only screen and (min-width:689px) and (max-width:992px) {
+
+    /* banner section start */
+    .banner-container {
+        margin: 50px auto;
+        width: 100%;
+    }
+
+    /* banner section end  */
+}
