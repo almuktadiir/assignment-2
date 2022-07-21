@@ -207,11 +207,10 @@ button a {
 /* footer start  */
 .foot-container {
     width: 100%;
-    /* height: 250px; */
     text-align: center;
     background-color: black;
     color: white;
-    padding: 100px 150px;
+    padding: 60px 150px;
 }
 
 .foot-title h2 {
